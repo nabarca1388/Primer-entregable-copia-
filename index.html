@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/estilo.css">
+    
+    <title>Fans F1</title>
+</head>
+<link rel="icon" href="./archivos/descarga (1).png">
+
+<header>
+<section class="menu">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img src="./archivos/Formula1.png" alt="logo" width="100px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/sorteos.html">Sorteos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./views/contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</section>
+    
+     <div class="row">
+         <div class="col-12">
+                <h1 class="titulo">Fans Formula 1</h1>
+          </div>
+     </div>
+     <div class="row">
+          <div class="col-3 p-5">
+              <img src="./archivos/senna.jpeg" alt="senna">
+          </div>
+          <div class="col-6 text-center"> 
+              <img src="./archivos/Formula1.png" alt="Formula1">
+          </div>
+          <div class="col-3 p-5">
+              <img src="./archivos/fangio.jpeg" alt="fangio">
+          </div>
+     </div>  
+</header>
+
+<body>
+    <main>
+        <section class="padre">
+         <div class="row">
+             <div class="col-6 p-3">
+                 <section class="pilotos">
+                     <h2>Pilotos</h2> 
+                     <iframe src="https://lat.motorsport.com/f1/drivers/" width="300px" height="690px"  frameborder="0" scrolling="0" allowfullscreen=""></iframe>
+               </section>
+             </div>
+             <div class="col-6 p-3">
+                 <section class="equipos">
+                     <h2 >Equipos</h2>
+                     <iframe src="https://lat.motorsport.com/f1/teams/" width="300px" height="690px"      frameborder="0" scrolling="0" allowfullscreen=""></iframe>
+               </section>
+             </div>
+        </div>
+       </section> 
+
+       <div class="row">
+             <div class="col-12 text-center p-5 m-2">
+                <section class="campeonato">
+                    <h2>Campeonato</h2>
+                    <iframe src="https://www.f1latam.com/posiciones-campeonato-f1-2022.php" width="900px" height="690px" frameborder="0" scrolling="0"></iframe>
+              </section>
+             </div>
+       </div>
+
+       <div class="row">
+            <div class="col-12 text-center p-5 m-2">
+                <section class="noticias">
+                    <h2>Noticias</h2>
+                    <iframe src="https://www.fanat1cos.com/news-cat/noticias/" width="800px" height="690px" frameborder="0" scrolling="0"></iframe>
+              </section>
+            </div>
+       </div>
+
+       <form class="w-50 p-4">
+        <fieldset>
+          <legend class="formulario">Quien ganara el campeonato</legend>
+          
+          <div class="mb-3">
+            <select id="disabledSelect" class="form-select" >
+                <option value=""></option> 
+                <option value="Max Verstapen">Max Verstapen</option>
+                <option value="Sergio Perez">Sergio Perez</option>
+                <option value="Lewis Hamilton">Lewis Hamilton</option>
+                <option value="George Russell">George Russell</option>
+                <option value="Lando Norris">Lando Norris</option>
+                <option value="Daniel Ricciardo">Daniel Ricciardo</option>
+                <option value="Sebastian Vettel">Sebastian Vettel</option>
+                <option value="Lance Stroll">Lance Stroll</option>
+                <option value="Nicholas Latifi">Nicholas Latifi</option>
+                <option value="Alexander Albon">Alexander Albon</option>
+                <option value="Pierre Gasly">Pierre Gasly</option>
+                <option value="Yuki Tsunoda">Yuki Tsunoda</option>
+                <option value="Fernando Alonso">Fernando Alonso</option>
+                <option value="Esteban Ocon">Esteban Ocon</option>
+                <option value="Charles Leclerc">Charles Leclerc</option>
+                <option value="Carlos Sainz">Carlos Sainz</option>
+                <option value="Kevin Magnussen">Kevin Magnussen</option>
+                <option value="Mick Schumacher">Mick Schumacher</option>
+                <option value="Guanyu Zhou">Guanyu Zhou</option>
+                <option value="Valtteri Bottas">Valtteri Bottas</option>
+            </select>
+          </div>
+          
+          <div class="mb-3">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="disabledFieldsetCheck">
+              <label class="form-check-label" for="disabledFieldsetCheck">
+                Hace click cuando eligas
+              </label>
+              <div class="p-3 m-2" data-aos="fade-left"><img src="./archivos/copa.jpeg" alt="copa"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </fieldset>
+      </form>
+
+    </main>
+
+</body>
+
+<footer>
+		<a href="#top">
+			<h2 data-aos="zoom-in">Inicio</h2>
+		</a>
+
+        <img class="footerLogo" data-aos="flip-right" src="./archivos/descarga (1).png" alt="logo" >
+        <a href="./views/contactos.html">
+            <h3 data-aos="zoom-out-left">Contactos</h3>
+        </a>
+		
+
+        <section class="audio">
+            <AUdio controls >
+                <source src="./archivos/formula.mp3" type="audio/mp3">
+            </AUdio>
+        </section>
+        <h5>Todos los derechos reservados R® </h5>
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script> 
+            AOS.init({ 
+            easing: 'ease-out-back',duration: 2000})
+        </script>
+
+ <!-- JavaScript Bundle with Popper -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+</html>

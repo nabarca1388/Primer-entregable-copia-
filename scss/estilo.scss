@@ -1,0 +1,133 @@
+@mixin subTitulos {
+    display: inline-block;
+    padding: 20px;
+    text-align:center;
+    color: red;
+    margin: 20px;
+    font-family: 'Monoton', cursive;
+    text-transform: uppercase;
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titulo{
+    margin: 50px;
+    word-spacing: 30px;
+    font-size: 50px;
+    font-style: oblique;
+    text-align: center;
+    border-style:double;
+    border-width: 30px;
+    border-color: rgb(235, 229, 229);
+    border-radius: 50px;
+    color: red;
+    font-family: 'Monoton', cursive;
+    text-transform: uppercase;
+}
+
+
+body{
+    background-color: black;
+}
+
+.menu{
+    list-style-type: none;
+    margin: 20px;
+    text-align: center;
+    background-image: url(../archivos/bandera.jpeg);
+    height: 150px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin: 50px;
+
+    li{
+       display: inline-block;
+       margin: 10px;
+       padding: 10px;
+       width: 25%;
+       font-size: 20px;
+       background-color: rgb(201, 55, 55);
+
+       a{
+        text-decoration: none;
+        padding: 5px;
+        width: auto;
+        color: black;
+
+        &:hover{
+            color: rgb(219, 69, 64);
+        }
+       }
+
+       &:hover{
+        background-color: rgb(43, 55, 226);
+        border-style:groove;
+        border-radius: 30px;
+       }
+    }
+}
+
+
+/*INDEX*/
+
+.padre{
+    display: flex;
+    flex-flow: row;
+    justify-content:space-around;
+
+    .pilotos{
+        @include subTitulos()
+    }
+
+    .equipos{
+        @include subTitulos()
+    }
+}
+
+
+.campeonato{
+    @include subTitulos()
+}
+
+.noticias{
+    @include subTitulos()
+ }
+
+ .formulario{
+    color: red;
+    font-family: 'Monoton', cursive;
+    text-transform: uppercase;
+ }
+
+@import "sorteos"; 
+@import "contactos";
+
+ footer{
+    background: rgb(251,63,63);
+    background: -moz-radial-gradient(circle, rgba(251,63,63,1) 0%, rgba(219,4,4,0.024247198879551846) 100%);
+    background: -webkit-radial-gradient(circle, rgba(251,63,63,1) 0%, rgba(219,4,4,0.024247198879551846) 100%);
+    background: radial-gradient(circle, rgba(251,63,63,1) 0%, rgba(219,4,4,0.024247198879551846) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb3f3f",endColorstr="#db0404",GradientType=1);
+    padding: 20px;
+
+    .footerLogo{
+        width: 100px;
+        height: 50px;   
+    }
+}
+
+.audio{
+    text-align: right;
+}
+

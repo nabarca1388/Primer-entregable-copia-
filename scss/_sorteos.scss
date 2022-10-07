@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.titSorteo{
+    color: red;
+    font-family: 'Monoton', cursive;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 7;
+    padding: 10px;
+}
+
+.carousel-inner{
+     div{ 
+         h3{
+           color: rgb(224, 221, 43);
+           text-transform: uppercase;
+           text-align: center;
+        }
+     }
+}
+
+.formularioSorteo label{
+    color: rgb(224, 221, 43);
+    text-transform: uppercase;
+    text-align: center;
+}

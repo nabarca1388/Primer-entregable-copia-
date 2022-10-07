@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.titulo {
+  margin: 50px;
+  word-spacing: 30px;
+  font-size: 50px;
+  font-style: oblique;
+  text-align: center;
+  border-style: double;
+  border-width: 30px;
+  border-color: #ebe5e5;
+  border-radius: 50px;
+  color: red;
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase; }
+
+body {
+  background-color: black; }
+
+.menu {
+  list-style-type: none;
+  margin: 20px;
+  text-align: center;
+  background-image: url(../archivos/bandera.jpeg);
+  height: 150px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  margin: 50px; }
+  .menu li {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    width: 25%;
+    font-size: 20px;
+    background-color: #c93737; }
+    .menu li a {
+      text-decoration: none;
+      padding: 5px;
+      width: auto;
+      color: black; }
+      .menu li a:hover {
+        color: #db4540; }
+    .menu li:hover {
+      background-color: #2b37e2;
+      border-style: groove;
+      border-radius: 30px; }
+
+/*INDEX*/
+.padre {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around; }
+  .padre .pilotos {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    color: red;
+    margin: 20px;
+    font-family: 'Monoton', cursive;
+    text-transform: uppercase; }
+  .padre .equipos {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    color: red;
+    margin: 20px;
+    font-family: 'Monoton', cursive;
+    text-transform: uppercase; }
+
+.campeonato {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  color: red;
+  margin: 20px;
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase; }
+
+.noticias {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  color: red;
+  margin: 20px;
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase; }
+
+.formulario {
+  color: red;
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.titSorteo {
+  color: red;
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 7;
+  padding: 10px; }
+
+.carousel-inner div h3 {
+  color: #e0dd2b;
+  text-transform: uppercase;
+  text-align: center; }
+
+.formularioSorteo label {
+  color: #e0dd2b;
+  text-transform: uppercase;
+  text-align: center; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.bodyContactos h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: azure;
+  margin: 20px;
+  padding: 20px; }
+
+.bodyContactos .imagenMundo {
+  width: 700px;
+  height: 500px;
+  margin: 20px;
+  padding: 20px; }
+
+footer {
+  background: #fb3f3f;
+  background: -moz-radial-gradient(circle, #fb3f3f 0%, rgba(219, 4, 4, 0.0242472) 100%);
+  background: -webkit-radial-gradient(circle, #fb3f3f 0%, rgba(219, 4, 4, 0.0242472) 100%);
+  background: radial-gradient(circle, #fb3f3f 0%, rgba(219, 4, 4, 0.0242472) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fb3f3f",endColorstr="#db0404",GradientType=1);
+  padding: 20px; }
+  footer .footerLogo {
+    width: 100px;
+    height: 50px; }
+
+.audio {
+  text-align: right; }
