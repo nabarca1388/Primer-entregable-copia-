@@ -259,19 +259,16 @@ body {
 @media only screen and (max-width: 576px) {
   .bodyNosotros {
     text-align: center;
-    height: 950px;
+    height: 1200px;
     font-size: 1rem;
     padding: 10px;
     margin: 30px; }
   .bodyNosotros p {
     line-height: 1.5;
-    padding: 10px;
-    font-weight: bolder; }
+    padding: 10px; }
   .bodyNosotros .subtituloNosotros {
-    background-color: rgba(46, 46, 36, 0.61);
     line-height: 2;
-    padding: 10px;
-    font-weight: bolder; } }
+    padding: 10px; } }
 
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .bodyNosotros {
