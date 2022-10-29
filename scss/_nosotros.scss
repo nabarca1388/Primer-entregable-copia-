@@ -1,0 +1,91 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.subtituloNosotros{
+    @include subTitulos()    
+}
+
+.bodyNosotros{
+    text-align: center;
+    background-image: url(../archivos/nosotros.jpg);
+    height: 600px;
+    color: aliceblue;
+    font-size: 1rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    margin: 50px;
+}
+
+.bodyNosotros{
+    p{
+    background-color: rgba(245, 19, 19, 0.432);
+    line-height: 2;
+    padding: 10px;
+    font-weight: bolder;
+    }
+} 
+    
+.bodyNosotros{
+    .subtituloNosotros{
+    background-color: rgba(46, 46, 36, 0.61);
+    line-height: 2;
+    padding: 10px;
+    font-weight: bolder;   
+    }
+} 
+
+@media only screen and (max-width: 576px){
+    .bodyNosotros{
+        text-align: center;
+        height: 950px;
+        font-size: 1rem;
+        padding: 10px;
+        margin: 30px;
+    }
+    
+    .bodyNosotros{
+        p{
+        line-height: 1.5;
+        padding: 10px;
+        }
+    } 
+        
+    .bodyNosotros{
+        .subtituloNosotros{
+        line-height: 2;
+        padding: 10px;   
+        }
+    } 
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .bodyNosotros{
+        text-align: center;
+        height: 800px;
+        font-size: 1rem;
+        padding: 10px;
+        margin: 30px;
+    }
+    
+    .bodyNosotros{
+        p{
+        line-height: 1.8;
+        padding: 10px;
+        }
+    } 
+        
+    .bodyNosotros{
+        .subtituloNosotros{
+        line-height: 2;
+        padding: 10px;   
+        }
+    } 
+}
+    

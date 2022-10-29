@@ -17,6 +17,29 @@
   font-family: 'Monoton', cursive;
   text-transform: uppercase; }
 
+.senna {
+  text-align: right;
+  padding-right: 50%;
+  grid-area: senna; }
+
+.formula1 {
+  text-align: center;
+  grid-area: formula1; }
+
+.fangio {
+  text-align: left;
+  padding-left: 50%;
+  grid-area: fangio; }
+
+.contenedorTitulo {
+  display: grid;
+  margin: auto;
+  padding: 10px;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-template-areas: "fangio formula1 senna"; }
+
 body {
   background-color: black; }
 
@@ -38,12 +61,12 @@ body {
     padding: 10px;
     width: 25%;
     font-size: 20px;
-    background-color: #c93737; }
+    background-color: #fd3d02; }
     .menu li a {
       text-decoration: none;
       padding: 5px;
-      width: auto;
-      color: black; }
+      width: 50%;
+      color: #070807; }
       .menu li a:hover {
         color: #db4540; }
     .menu li:hover {
@@ -74,6 +97,7 @@ body {
     text-transform: uppercase; }
 
 .campeonato {
+  grid-area: campeonato;
   display: inline-block;
   padding: 20px;
   text-align: center;
@@ -83,6 +107,7 @@ body {
   text-transform: uppercase; }
 
 .noticias {
+  grid-area: noticias;
   display: inline-block;
   padding: 20px;
   text-align: center;
@@ -90,6 +115,16 @@ body {
   margin: 20px;
   font-family: 'Monoton', cursive;
   text-transform: uppercase; }
+
+.contenedorMenu {
+  display: grid;
+  margin: auto;
+  padding: 10px;
+  background-color: black;
+  width: auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "campeonato" "noticias"; }
 
 .formulario {
   color: red;
@@ -124,18 +159,133 @@ body {
   padding: 0;
   box-sizing: border-box; }
 
-.bodyContactos h2 {
-  text-align: center;
-  text-transform: uppercase;
-  color: azure;
-  margin: 20px;
-  padding: 20px; }
+.imagenMundo {
+  grid-area: imagenMundo; }
 
-.bodyContactos .imagenMundo {
-  width: 700px;
-  height: 500px;
+.subMundo {
+  grid-area: subMundo; }
+
+.containerContactos {
+  text-align: center;
+  margin: auto;
+  padding: 30px; }
+  .containerContactos .subMundo {
+    display: inline-block;
+    padding: 20px;
+    text-align: center;
+    color: red;
+    margin: 20px;
+    font-family: 'Monoton', cursive;
+    text-transform: uppercase; }
+  .containerContactos .imagenMundo {
+    width: 700px;
+    height: 500px;
+    margin: 20px;
+    padding: 20px; }
+
+@media only screen and (max-width: 576px) {
+  .containerContactos {
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "subMundo" "imagenMundo"; }
+    .containerContactos .imagenMundo {
+      width: 450px; }
+    .containerContactos .subMundo {
+      margin: 10px;
+      word-spacing: 10px;
+      font-size: 20px;
+      border-width: 10px; } }
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .containerContactos {
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "subMundo" "imagenMundo"; }
+    .containerContactos .imagenMundo {
+      width: 600px; }
+    .containerContactos .subMundo {
+      margin: 10px;
+      word-spacing: 10px;
+      font-size: 25px;
+      border-width: 10px; } }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.subtituloNosotros {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+  color: red;
   margin: 20px;
-  padding: 20px; }
+  font-family: 'Monoton', cursive;
+  text-transform: uppercase; }
+
+.bodyNosotros {
+  text-align: center;
+  background-image: url(../archivos/nosotros.jpg);
+  height: 600px;
+  color: aliceblue;
+  font-size: 1rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  margin: 50px; }
+
+.bodyNosotros p {
+  background-color: rgba(245, 19, 19, 0.432);
+  line-height: 2;
+  padding: 10px;
+  font-weight: bolder; }
+
+.bodyNosotros .subtituloNosotros {
+  background-color: rgba(46, 46, 36, 0.61);
+  line-height: 2;
+  padding: 10px;
+  font-weight: bolder; }
+
+@media only screen and (max-width: 576px) {
+  .bodyNosotros {
+    text-align: center;
+    height: 950px;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 30px; }
+  .bodyNosotros p {
+    line-height: 1.5;
+    padding: 10px;
+    font-weight: bolder; }
+  .bodyNosotros .subtituloNosotros {
+    background-color: rgba(46, 46, 36, 0.61);
+    line-height: 2;
+    padding: 10px;
+    font-weight: bolder; } }
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .bodyNosotros {
+    text-align: center;
+    height: 800px;
+    font-size: 1rem;
+    padding: 10px;
+    margin: 30px; }
+  .bodyNosotros p {
+    line-height: 1.8;
+    padding: 10px; }
+  .bodyNosotros .subtituloNosotros {
+    line-height: 2;
+    padding: 10px; } }
 
 footer {
   background: #fb3f3f;
@@ -150,3 +300,89 @@ footer {
 
 .audio {
   text-align: right; }
+
+@media only screen and (max-width: 576px) {
+  .menu {
+    list-style-type: none;
+    margin: 10px;
+    text-align: center;
+    background-image: url(../archivos/bandera.jpeg);
+    height: 100px;
+    background-attachment: fixed;
+    padding: 10px;
+    margin: 30px; }
+    .menu img {
+      width: 70px; }
+    .menu li {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      width: 150px;
+      font-size: 20px;
+      background-color: #d8e611; }
+  .titulo {
+    margin: 30px;
+    word-spacing: 10px;
+    font-size: 20px;
+    border-width: 10px; }
+  .contenedorTitulo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "formula1"  "fangio"  "senna"; }
+    .contenedorTitulo .senna {
+      text-align: center;
+      padding-right: 0%; }
+    .contenedorTitulo .fangio {
+      text-align: center;
+      padding-left: 0%;
+      padding: 10px; }
+  .contenedorMenu {
+    display: grid;
+    margin: auto;
+    padding: 10px;
+    background-color: black;
+    grid-template-columns: .5fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "campeonato" "noticias"; }
+    .contenedorMenu iframe {
+      width: 400px; }
+  footer .audio {
+    margin: auto;
+    padding: 10px;
+    text-align: left; } }
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+  .menu {
+    list-style-type: none;
+    margin: 10px;
+    text-align: center;
+    background-image: url(../archivos/bandera.jpeg);
+    height: 130px;
+    background-attachment: fixed;
+    padding: 10px;
+    margin: 30px; }
+    .menu img {
+      width: 100px; }
+    .menu li {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px;
+      width: 150px;
+      font-size: 20px;
+      background-color: #11e623; }
+  .titulo {
+    margin: 30px;
+    word-spacing: 10px;
+    font-size: 30px;
+    border-width: 10px; }
+  .contenedorTitulo {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "formula1 formula1"  "fangio senna"; }
+    .contenedorTitulo .senna {
+      text-align: right;
+      padding-right: 0%; }
+    .contenedorTitulo .fangio {
+      text-align: left;
+      padding-left: 0%; } }

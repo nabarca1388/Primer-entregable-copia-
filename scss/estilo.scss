@@ -8,15 +8,13 @@
     text-transform: uppercase;
 }
 
-
-
-
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
 
 .titulo{
     margin: 50px;
@@ -33,6 +31,31 @@
     text-transform: uppercase;
 }
 
+.senna{
+    text-align: right;
+    padding-right: 50%;
+    grid-area: senna;
+}
+.formula1{
+    text-align: center;
+    grid-area: formula1;
+}
+.fangio{
+    text-align: left;
+    padding-left: 50%;
+    grid-area: fangio;
+}
+
+.contenedorTitulo{
+    display: grid;
+    margin: auto;
+    padding:10px;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "fangio formula1 senna";
+}
 
 body{
     background-color: black;
@@ -57,13 +80,13 @@ body{
        padding: 10px;
        width: 25%;
        font-size: 20px;
-       background-color: rgb(201, 55, 55);
+       background-color: rgb(253, 61, 2);
 
        a{
         text-decoration: none;
         padding: 5px;
-        width: auto;
-        color: black;
+        width: 50%;
+        color: rgb(7, 8, 7);
 
         &:hover{
             color: rgb(219, 69, 64);
@@ -95,14 +118,28 @@ body{
     }
 }
 
-
 .campeonato{
+    grid-area: campeonato;
     @include subTitulos()
 }
 
 .noticias{
+    grid-area: noticias;
     @include subTitulos()
- }
+}
+
+.contenedorMenu{
+    display: grid;
+    margin: auto;
+    padding:10px;
+    background-color: black;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "campeonato"
+    "noticias";
+}
 
  .formulario{
     color: red;
@@ -112,6 +149,7 @@ body{
 
 @import "sorteos"; 
 @import "contactos";
+@import "nosotros";
 
  footer{
     background: rgb(251,63,63);
@@ -129,5 +167,135 @@ body{
 
 .audio{
     text-align: right;
+}
+
+
+
+@media only screen and (max-width: 576px){
+    .menu{
+        list-style-type: none;
+        margin: 10px;
+        text-align: center;
+        background-image: url(../archivos/bandera.jpeg);
+        height: 100px;
+        background-attachment: fixed;
+        padding: 10px;
+        margin: 30px;
+
+        img{
+            width: 70px;
+        }
+
+        li{
+           display: inline-block;
+           margin: 10px;
+           padding: 10px;
+           width: 150px;
+           font-size: 20px;
+           background-color: rgb(216, 230, 17);
+        }
+    }
+
+    .titulo{
+        margin: 30px;
+        word-spacing: 10px;
+        font-size: 20px;
+        border-width: 10px;
+    }
+
+    .contenedorTitulo{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        grid-template-areas:
+        "formula1" 
+        "fangio" 
+        "senna";
+
+        .senna{
+            text-align: center;
+            padding-right: 0%;
+        }
+        .fangio{
+            text-align: center;
+            padding-left: 0%;
+            padding: 10px;
+        }
+    }
+
+    .contenedorMenu{
+        display: grid;
+        margin: auto;
+        padding: 10px;
+        background-color: black;
+        grid-template-columns: .5fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        "campeonato"
+        "noticias";
+
+        iframe{
+            width: 400px;
+        }
+    }
+
+    footer{
+        .audio{
+            margin: auto;
+            padding: 10px;
+            text-align: left;
+        }
+   }
+}
+ 
+
+@media only screen and (min-width: 576px) and (max-width: 768px){
+    .menu{
+        list-style-type: none;
+        margin: 10px;
+        text-align: center;
+        background-image: url(../archivos/bandera.jpeg);
+        height: 130px;
+        background-attachment: fixed;
+        padding: 10px;
+        margin: 30px;
+
+        img{
+            width: 100px;
+        }
+
+        li{
+           display: inline-block;
+           margin: 10px;
+           padding: 10px;
+           width: 150px;
+           font-size: 20px;
+           background-color: rgb(17, 230, 35);
+        }
+    }
+
+    .titulo{
+        margin: 30px;
+        word-spacing: 10px;
+        font-size: 30px;
+        border-width: 10px;
+    }
+
+    .contenedorTitulo{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas:
+        "formula1 formula1" 
+        "fangio senna";
+
+        .senna{
+            text-align:right;
+            padding-right: 0%;
+        }
+        .fangio{
+            text-align: left;
+            padding-left: 0%;
+        }
+    }
 }
 

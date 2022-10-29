@@ -1,7 +1,6 @@
 {
   "name": "abarca",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "dependencies": {
     "abbrev": "^1.1.1",
@@ -251,5 +250,6 @@
   "bugs": {
     "url": "https://github.com/nabarca1388/Primer-entregable/issues"
   },
-  "homepage": "https://github.com/nabarca1388/Primer-entregable#readme"
+  "homepage": "https://github.com/nabarca1388/Primer-entregable#readme",
+  "description": ""
 }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toda la informacion en un mismo lugar sobre el mundo de la formula 1"> <!--Escribo un resumen del tema del sitio web-->
+    <meta name="keywords" content=""> <!--Contiene las palabras claves que quiero resaltar en busqueda-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
@@ -20,7 +22,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <img src="./archivos/Formula1.png" alt="logo" width="100px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler border bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           
@@ -49,30 +51,32 @@
                 <h1 class="titulo">Fans Formula 1</h1>
           </div>
      </div>
-     <div class="row">
-          <div class="col-3 p-5">
-              <img src="./archivos/senna.jpeg" alt="senna">
+<div class="contenedorTitulo">     
+          <div class="senna">
+              <img src="./archivos/senna.jpeg" alt="senna" width="150" height="150">
           </div>
-          <div class="col-6 text-center"> 
+          <div class="formula1"> 
               <img src="./archivos/Formula1.png" alt="Formula1">
           </div>
-          <div class="col-3 p-5">
-              <img src="./archivos/fangio.jpeg" alt="fangio">
+          <div class="fangio">
+              <img src="./archivos/fangio.jpeg" alt="fangio" width="150" height="150">
           </div>
-     </div>  
+</div>
+
 </header>
 
 <body>
     <main>
+
         <section class="padre">
          <div class="row">
-             <div class="col-6 p-3">
+             <div class="col-lg-6 col-xs-12 col-md-6 text-center p-3">
                  <section class="pilotos">
                      <h2>Pilotos</h2> 
                      <iframe src="https://lat.motorsport.com/f1/drivers/" width="300px" height="690px"  frameborder="0" scrolling="0" allowfullscreen=""></iframe>
                </section>
              </div>
-             <div class="col-6 p-3">
+             <div class="col-lg-6 col-xs-12 col-md-6 text-center p-3">
                  <section class="equipos">
                      <h2 >Equipos</h2>
                      <iframe src="https://lat.motorsport.com/f1/teams/" width="300px" height="690px"      frameborder="0" scrolling="0" allowfullscreen=""></iframe>
@@ -81,23 +85,16 @@
         </div>
        </section> 
 
-       <div class="row">
-             <div class="col-12 text-center p-5 m-2">
-                <section class="campeonato">
+    <div class="contenedorMenu">
+                <div class="campeonato">
                     <h2>Campeonato</h2>
-                    <iframe src="https://www.f1latam.com/posiciones-campeonato-f1-2022.php" width="900px" height="690px" frameborder="0" scrolling="0"></iframe>
-              </section>
-             </div>
-       </div>
-
-       <div class="row">
-            <div class="col-12 text-center p-5 m-2">
-                <section class="noticias">
+                    <iframe src="https://www.f1latam.com/posiciones-campeonato-f1-2022.php" width="800px" height="690px" frameborder="0" scrolling="0"></iframe>
+                </div>
+                <div class="noticias">
                     <h2>Noticias</h2>
                     <iframe src="https://www.fanat1cos.com/news-cat/noticias/" width="800px" height="690px" frameborder="0" scrolling="0"></iframe>
-              </section>
-            </div>
-       </div>
+                </div>    
+    </div>
 
        <form class="w-50 p-4">
         <fieldset>
@@ -162,7 +159,7 @@
                 <source src="./archivos/formula.mp3" type="audio/mp3">
             </AUdio>
         </section>
-        <h5>Todos los derechos reservados R® </h5>
+        <h5 class="btn btn-primary">Todos los derechos reservados R® </h5>
 </footer>
 
 

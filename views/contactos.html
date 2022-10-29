@@ -11,67 +11,82 @@
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/estilo.css">
     
-    <title>Contactos</title>
+    <title>Fans F1/Contactos</title>
 </head>
 <link rel="icon" href="../archivos/descarga (1).png">
 
 <header>
-
-    <section class="menu">
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <img src="../archivos/Formula1.png" alt="logo" width="100px"></a>
-              
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./sorteos.html">Sorteos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="./contactos.html">Contactos</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-    </section>
-        
+  <section class="menu">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img src="../archivos/Formula1.png" alt="logo" width="100px"></a>
+          <button class="navbar-toggler border bg-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/sorteos.html">Sorteos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../views/contactos.html">Contactos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</section>
+    
      <div class="row">
          <div class="col-12">
                 <h1 class="titulo">Fans Formula 1</h1>
           </div>
      </div>
-     <div class="row">
-          <div class="col-3 p-5">
-              <img src="../archivos/senna.jpeg" alt="senna">
+<div class="contenedorTitulo">     
+          <div class="senna">
+              <img src="../archivos/senna.jpeg" alt="senna" width="150" height="150">
           </div>
-          <div class="col-6 text-center"> 
+          <div class="formula1"> 
               <img src="../archivos/Formula1.png" alt="Formula1">
           </div>
-          <div class="col-3 p-5">
-              <img src="../archivos/fangio.jpeg" alt="fangio">
+          <div class="fangio">
+              <img src="../archivos/fangio.jpeg" alt="fangio" width="150" height="150">
           </div>
-     </div>
-
+</div>
 </header>
 
-<body class="bodyContactos">
-    <h2>Decinos de que parte del mundo sos</h2>
-    <div class="row">
-        <div class="col-6 text-center me-auto "> 
-            <img class="imagenMundo" src="../archivos/mundo.jpg" alt="mundo">
-        </div>
+<body>
+
+  <div class="containerContactos">
+    <h2 class="subMundo">Decinos de que parte del mundo sos</h2> 
+    <img class="imagenMundo" src="../archivos/mundo.jpg" alt="mundo">
+  </div>
+
+  <form class="formularioSorteo w-25 p-4 mx-auto">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
+
+    <div class="mb-3">
+      <label for="exampleInputNombre" class="form-label">Nombre</label>
+      <input type="Nombre" class="form-control" id="exampleInputNombre">
+    </div>
+
+    <div class="mb-2">
+      <label for="exampleInputNombre" class="form-label">Pais</label>
+      <input type="Pais" class="form-control" id="exampleInputNombre">
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+  </form>
 
 </body>
 
@@ -91,7 +106,7 @@
               <source src="../archivos/formula.mp3" type="audio/mp3">
           </AUdio>
       </section>
-      <h5>Todos los derechos reservados R® </h5>
+      <h5 class="btn btn-primary">Todos los derechos reservados R® </h5>
 </footer>
 
 
