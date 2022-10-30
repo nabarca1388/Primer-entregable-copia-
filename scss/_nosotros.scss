@@ -12,7 +12,7 @@
 .bodyNosotros{
     text-align: center;
     background-image: url(../archivos/nosotros.jpg);
-    height: 600px;
+    height: 800px;
     color: aliceblue;
     font-size: 1rem;
     background-attachment: fixed;
@@ -28,6 +28,7 @@
     background-color: rgba(245, 19, 19, 0.432);
     line-height: 2;
     padding: 10px;
+    font-size: 1.2rem;
     font-weight: bolder;
     }
 } 
@@ -44,7 +45,7 @@
 @media only screen and (max-width: 576px){
     .bodyNosotros{
         text-align: center;
-        height: 1200px;
+        height: 1800px;
         font-size: 1rem;
         padding: 10px;
         margin: 30px;
@@ -54,6 +55,7 @@
         p{
         line-height: 1.5;
         padding: 10px;
+        font-size: 1rem;
         }
     } 
         
@@ -68,7 +70,7 @@
 @media only screen and (min-width: 576px) and (max-width: 768px){
     .bodyNosotros{
         text-align: center;
-        height: 800px;
+        height: 1000px;
         font-size: 1rem;
         padding: 10px;
         margin: 30px;
@@ -78,6 +80,7 @@
         p{
         line-height: 1.8;
         padding: 10px;
+        font-size: 1rem;
         }
     } 
         
